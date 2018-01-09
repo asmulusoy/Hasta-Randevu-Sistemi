@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HastaneOtomasyon", "HastaneOtomasyon\HastaneOtomasyon.csproj", "{1542407B-D2AC-4143-A85C-85D52859B27E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1542407B-D2AC-4143-A85C-85D52859B27E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1542407B-D2AC-4143-A85C-85D52859B27E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1542407B-D2AC-4143-A85C-85D52859B27E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1542407B-D2AC-4143-A85C-85D52859B27E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EF1EAB3-C604-4DEE-9A39-4CCEA78A1781}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://masimulusoy.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = HastaneOtomasyon\\HastaneOtomasyon.csproj
+		SccProjectName1 = HastaneOtomasyon
+		SccLocalPath1 = HastaneOtomasyon
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1542407B-D2AC-4143-A85C-85D52859B27E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HastaneOtomasyon</RootNamespace>
+    <AssemblyName>HastaneOtomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\Dogrulamalar.cs" />
+    <Compile Include="classes\Doktor.cs" />
+    <Compile Include="classes\Hasta.cs" />
+    <Compile Include="classes\Hemsire.cs" />
+    <Compile Include="classes\Islemler.cs" />
+    <Compile Include="classes\Kisiler.cs" />
+    <Compile Include="classes\Listeler.cs" />
+    <Compile Include="classes\Personel.cs" />
+    <Compile Include="classes\Randevu.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoktorEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoktorEkle.Designer.cs">
+      <DependentUpon>frmDoktorEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoktorGuncelleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoktorGuncelleSil.Designer.cs">
+      <DependentUpon>frmDoktorGuncelleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGorevliHemsireler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGorevliHemsireler.Designer.cs">
+      <DependentUpon>frmGorevliHemsireler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHastaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHastaEkle.Designer.cs">
+      <DependentUpon>frmHastaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHastaGuncelleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHastaGuncelleSil.Designer.cs">
+      <DependentUpon>frmHastaGuncelleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHemsireDoktorAtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHemsireDoktorAtama.Designer.cs">
+      <DependentUpon>frmHemsireDoktorAtama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHemsireEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHemsireEkle.Designer.cs">
+      <DependentUpon>frmHemsireEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHemsireGuncelleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHemsireGuncelleSil.Designer.cs">
+      <DependentUpon>frmHemsireGuncelleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHemsireyeDoktorSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHemsireyeDoktorSec.Designer.cs">
+      <DependentUpon>frmHemsireyeDoktorSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonelEkle.Designer.cs">
+      <DependentUpon>frmPersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonelGuncelleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonelGuncelleSil.Designer.cs">
+      <DependentUpon>frmPersonelGuncelleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRandevuEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRandevuEkle.Designer.cs">
+      <DependentUpon>frmRandevuEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRandevuEkleDoktorSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRandevuEkleDoktorSec.Designer.cs">
+      <DependentUpon>frmRandevuEkleDoktorSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRandevuYazdir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRandevuYazdir.Designer.cs">
+      <DependentUpon>frmRandevuYazdir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfaces\IMaasAlabilen.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoktorEkle.resx">
+      <DependentUpon>frmDoktorEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoktorGuncelleSil.resx">
+      <DependentUpon>frmDoktorGuncelleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGorevliHemsireler.resx">
+      <DependentUpon>frmGorevliHemsireler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHastaEkle.resx">
+      <DependentUpon>frmHastaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHastaGuncelleSil.resx">
+      <DependentUpon>frmHastaGuncelleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHemsireDoktorAtama.resx">
+      <DependentUpon>frmHemsireDoktorAtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHemsireEkle.resx">
+      <DependentUpon>frmHemsireEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHemsireGuncelleSil.resx">
+      <DependentUpon>frmHemsireGuncelleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHemsireyeDoktorSec.resx">
+      <DependentUpon>frmHemsireyeDoktorSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonelEkle.resx">
+      <DependentUpon>frmPersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonelGuncelleSil.resx">
+      <DependentUpon>frmPersonelGuncelleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRandevuEkle.resx">
+      <DependentUpon>frmRandevuEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRandevuEkleDoktorSec.resx">
+      <DependentUpon>frmRandevuEkleDoktorSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRandevuYazdir.resx">
+      <DependentUpon>frmRandevuYazdir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\randevu_ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_text_285672.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cikis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\randevu_ekle_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hemsire_ekle_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yazdir_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doktor_ekle_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doktor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hemsire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_appointment-new_23189.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\randevu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iptal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ileri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iptal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_file-excel_285675.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yazdir.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
